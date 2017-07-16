@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:background="@color/colorPrimary"
+    android:isScrollContainer="true"
+    tools:context="com.example.roma.chat.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/default_avatar"
+        android:layout_marginTop="30dp"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/settings_avatar_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_name_tv"
+        android:text="Display Name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/settings_avatar_img"
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/common_google_signin_btn_text_dark"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_status_tv"
+        android:text="Hi, it's my account"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/settings_name_tv"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="120dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_change_image_btn"
+        android:layout_below="@id/settings_status_tv"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="CHANGE IMAGE"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_change_status_btn"
+        android:layout_below="@id/settings_change_image_btn"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="CHANGE STATUS"/>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roma.chat.StatusActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/status_app_bar"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_app_bar"
+        android:id="@+id/status_textInputLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="37dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your status" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="SAVE CHANGES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_textInputLayout"
+        android:layout_alignEnd="@id/status_textInputLayout"
+        android:layout_margin="20dp"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:id="@+id/status_save_changes_btn"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
