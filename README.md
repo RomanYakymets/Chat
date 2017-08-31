@@ -1,1 +1,1 @@
-# Chat
+Chat application using Firebase servises
