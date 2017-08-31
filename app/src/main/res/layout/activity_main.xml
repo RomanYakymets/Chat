@@ -31,11 +31,5 @@
         android:id="@+id/main_viewPager">
 
     </android.support.v4.view.ViewPager>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Main page"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
 </RelativeLayout>

@@ -13,7 +13,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="210dp"
         android:scaleType="fitXY"
         android:src="@drawable/default_avatar"
         android:id="@+id/profile_image"/>
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/profile_friends_tv"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_below="@id/profile_status_tv"
         android:text="User friends"
         android:gravity="center_horizontal"
@@ -51,15 +51,26 @@
         android:textSize="18sp"/>
 
     <Button
+        android:id="@+id/profile_send_req_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:layout_margin="10dp"
-        android:id="@+id/profile_send_req_btn"
         android:layout_below="@id/profile_friends_tv"
         android:background="@color/colorAccent"
         android:textColor="@android:color/white"
         android:text="Send friend request"
         android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/profile_decline_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_send_req_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="DECLINE FRIEND REQUEST"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
